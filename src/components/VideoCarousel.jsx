@@ -29,7 +29,7 @@ const VideoCarousel = () => {
     gsap.to("#slider", {
       transform: `translateX(${-100 * videoId}%)`,
       duration: 2,
-      ease: "power2.inOut", // show visualizer https://gsap.com/docs/v3/Eases
+      ease: "power2.inOut", 
     });
 
     // video animation to play the video when it is in the view
@@ -165,9 +165,7 @@ const VideoCarousel = () => {
                 <video
                   id="video"
                   playsInline={true}
-                  className={`${
-                    list.id === 2 && "translate-x-44"
-                  } pointer-events-none`}
+                  className=' pointer-events-none'
                   preload="auto"
                   muted
                   ref={(el) => (videoRef.current[i] = el)}
